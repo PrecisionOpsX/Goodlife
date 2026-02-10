@@ -1,0 +1,916 @@
+/* Hero Section */
+.hero-section {
+    width: 100%;
+}
+
+/* Top Hero Area - Background image with overlay */
+.hero-content {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px 60px;
+    background-image: url(../assets/images/home-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(40, 98, 65, 0.6);
+}
+
+.hero-content>* {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-heading-top {
+    margin: 0 0 40px;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.hero-service-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 12px;
+    column-gap: 80px;
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.hero-service-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #286241;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.hero-service-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.hero-heading-bottom {
+    margin: 0 0 30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 920px;
+    font-family: noto-sans;
+    font-weight: 100;
+}
+
+.hero-cta-btn {
+    display: inline-block;
+    padding: 16px 36px;
+    background-color: #C1FF72;
+    color: #286241;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.hero-cta-btn:hover {
+    background-color: #b8f066;
+}
+
+/* Responsive - stack buttons on smaller screens */
+@media (max-width: 768px) {
+    .hero-service-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        min-height: 400px;
+        padding: 60px 16px 40px;
+    }
+
+    .hero-heading-top {
+        margin-bottom: 24px;
+    }
+
+    .hero-service-buttons {
+        grid-template-columns: 1fr;
+        margin-bottom: 24px;
+    }
+
+    .hero-heading-bottom {
+        margin-bottom: 20px;
+    }
+}
+
+/* CTA Strip */
+.cta-strip {
+    background-color: #286241;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.cta-strip-text {
+    margin: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+}
+
+/* Options & Affordability Section */
+.options-affordability {
+    background: #fff;
+    padding: 100px 24px;
+}
+
+.options-affordability-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.options-column {
+    width: 100%;
+    height: 100%;
+    background-color: #65BD54;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options-column .section-btn {
+    margin-top: 20px;
+}
+
+.options-column .options-text {
+    grid-column: 1;
+}
+
+.options-column .section-image {
+    grid-column: 2;
+    grid-row: 1 / -1;
+}
+
+.options-heading span {
+    font-size: 18px;
+}
+
+.options-heading {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.option-text {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0 0 24px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.options-video {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-play-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #286241;
+}
+
+.video-play-btn:hover {
+    background: #fff;
+}
+
+.section-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.section-btn-green {
+    background-color: #C1FF72;
+    color: #286241;
+}
+
+.section-btn-green .video-play-icon {
+    border-radius: 100%;
+    background-color: #286241;
+    color: #C1FF72;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-btn:hover {
+    opacity: 0.95;
+}
+
+.section-image,
+.special-image {
+    width: 100%;
+    aspect-ratio: 4/2;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.affordability-column {
+    width: 100%;
+    height: 100%;
+    background-color: #65BD54;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.affordability-column .section-btn {
+    margin-top: 20px;
+}
+
+.insurance-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.brand-logos {
+    border-radius: 4px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 10px #d6d6d6;
+    padding: 5px;
+}
+
+.brand-logos img {
+    width: 100%;
+}
+
+/* New Patient Special */
+.new-patient-special {
+    background-color: #f5f5f5;
+}
+
+.new-patient-special-inner {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.special-content h2 {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.special-price {
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: 700;
+    color: #286241;
+    margin: 0 0 20px;
+}
+
+.special-content {
+    padding: 20px 60px;
+    margin: 0 auto;
+}
+
+.special-content p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0 0 18px;
+}
+
+/* Statistics Bar */
+.stats-bar {
+    background-color: #359F49;
+    padding: 50px 24px;
+}
+
+.stats-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    color: #C1FF72;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+}
+
+/* About Section */
+.about-section {
+    background: #fff;
+    padding: 60px 24px;
+}
+
+.about-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+#about-heading {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.about-content h2 {
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 24px;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0 0 16px;
+}
+
+/* Services Overview Strip */
+.services-strip {
+    background-color: #fff;
+    padding: 60px 24px;
+}
+
+.services-strip-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.service-overview-item {
+    padding: 40px 32px;
+    text-align: left;
+}
+
+.service-overview-dark {
+    background-color: #286241;
+}
+
+.service-overview-medium {
+    background-color: #359F49;
+}
+
+.service-overview-light {
+    background-color: #65BD54;
+}
+
+.service-overview-light h3,
+.service-overview-light p {
+    color: #286241;
+}
+
+.service-overview-item h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.service-overview-item h3 span {
+    display: block;
+}
+
+.service-accent-line {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #C1FF72;
+    margin-bottom: 20px;
+}
+
+.service-overview-item p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Team Section */
+.team-section {
+    background: #fff;
+    padding: 60px 24px;
+}
+
+.team-section>h2 {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.team-subheading {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    text-align: center;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+}
+
+.owners-row {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.owner-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.owner-card-left {
+    flex-direction: row;
+}
+
+.owner-card-right {
+    flex-direction: row-reverse;
+}
+
+.owner-bio {
+    flex: 1;
+    padding: 24px 32px;
+    background-color: #e8f5e0;
+    border: 3px solid #359F49;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    width: 85%;
+    max-width: 85%;
+}
+
+.owner-card-left .owner-bio {
+    padding-right: 100px;
+}
+
+.owner-card-right .owner-bio {
+    padding-left: 100px;
+}
+
+.owner-bio p {
+    margin: 0;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.owner-photo {
+    flex-shrink: 0;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 7px solid #65BD54;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.owner-card-left .owner-photo {
+    right: 0;
+}
+
+.owner-card-right .owner-photo {
+    left: 0;
+}
+
+.providers-row {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.provider-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.provider-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.provider-placeholder span {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Schedule */
+.schedule-section {
+    padding: 60px 24px;
+    margin-top: 50px;
+}
+
+.schedule-sectione-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.schedule-map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.schedule-form {
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* Patient Experience */
+.patient-experience {
+    background: #fff;
+    padding: 60px 24px;
+}
+
+.patient-experience-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.experience-content h2 {
+    font-size: clamp(20px, 2.5vw, 24px);
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+
+.experience-content p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Locations */
+.locations-section {
+    background-color: #286241;
+    padding: 50px 24px;
+}
+
+.locations-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.locations-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.location-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.location-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #C1FF72;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 12px;
+}
+
+.location-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.location-card:hover .location-name {
+    text-decoration: underline;
+}
+
+/* Testimonials */
+.testimonials-section {
+    background: #fff;
+    padding: 60px 24px;
+}
+
+.testimonials-section h2 {
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.testimonials-slider {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider-arrow {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.slider-arrow:hover {
+    background: #d0d0d0;
+}
+
+.testimonials-track {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    overflow-x: auto;
+}
+
+.testimonial-card {
+    padding: 24px;
+    background-color: #e8f5e0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+}
+
+.testimonial-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #000;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Responsive - New Sections */
+@media (max-width: 1024px) {
+
+    .options-affordability-inner,
+    .new-patient-special-inner,
+    .about-inner,
+    .patient-experience-inner {
+        gap: 40px;
+    }
+
+    .insurance-logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stats-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .options-affordability-inner,
+    .new-patient-special-inner,
+    .about-inner,
+    .patient-experience-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .options-column {
+        grid-template-columns: 1fr;
+    }
+
+    .options-column .section-image {
+        grid-column: 1;
+        grid-row: auto;
+        order: -1;
+    }
+
+    .services-strip-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .owners-row {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    .team-subheading {
+        margin: 0 0 50px;
+    }
+
+    .owner-photo {
+        width: 120px;
+        height: 120px;
+        top: -15px;
+    }
+
+    .owner-bio {
+        max-width: 90%;
+    }
+
+    .testimonials-track {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-sectione-inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .options-affordability,
+    .new-patient-special,
+    .about-section,
+    .team-section,
+    .patient-experience,
+    .testimonials-section {
+        padding: 40px 16px;
+    }
+
+    .cta-strip {
+        padding: 30px 16px;
+    }
+
+    .stats-bar {
+        padding: 40px 16px;
+    }
+
+    .stats-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .insurance-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .locations-section h2 {
+        margin-bottom: 30px;
+    }
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
