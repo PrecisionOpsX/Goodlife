@@ -9,7 +9,7 @@
     <meta name="keywords"
         content="physical medicine, chiropractic, pain management, physical therapy, South Bay Los Angeles, regenerative therapy">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <title>Goodlife Physical Medicine & Chiropractic | Pain Management & Physical Therapy</title>
     <link rel="stylesheet" href="./css/index.css">
@@ -290,36 +290,72 @@
         <!-- Testimonials -->
         <section class="testimonials-section" aria-labelledby="testimonials-heading">
             <h2 id="testimonials-heading">How We've Helped Others the Goodlife Way</h2>
-            <div class="testimonials-slider">
-                <button class="slider-arrow slider-prev" aria-label="Previous testimonials"><i
-                        class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                <div class="testimonials-track">
-                    <article class="testimonial-card">
-                        <img src="./assets/images/Jack.jpg" alt="Testimonial Avatar" class="testimonial-avatar">
-                        <p>Well run a full diagnostic test to see what's the problem and what's the best solution.</p>
-                    </article>
-                    <article class="testimonial-card">
-                        <img src="./assets/images/Cory.jpg" alt="Testimonial Avatar" class="testimonial-avatar">
-                        <p>From the moment I walked in, I felt cared for. The team took time to understand my pain and
-                            created a treatment plan that actually worked.</p>
-                    </article>
-                    <article class="testimonial-card">
-                        <div style="background-color: #cccccc;" aria-hidden="true"></div>
-                        <img src="./assets/images/Dave.png" alt="Testimonial Avatar" class="testimonial-avatar">
-                        <p>After years of chronic back pain, Goodlife gave me my life back. I can't recommend them
-                            enough.</p>
-                    </article>
+            <div class="testimonials-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="testimonial-card">
+                            <img src="./assets/images/Jack.jpg" alt="Testimonial Avatar" class="testimonial-avatar">
+                            <p>Well run a full diagnostic test to see what's the problem and what's the best solution.</p>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="testimonial-card">
+                            <img src="./assets/images/Cory.jpg" alt="Testimonial Avatar" class="testimonial-avatar">
+                            <p>From the moment I walked in, I felt cared for. The team took time to understand my pain and
+                                created a treatment plan that actually worked.</p>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="testimonial-card">
+                            <div style="background-color: #cccccc;" aria-hidden="true"></div>
+                            <img src="./assets/images/Dave.png" alt="Testimonial Avatar" class="testimonial-avatar">
+                            <p>After years of chronic back pain, Goodlife gave me my life back. I can't recommend them
+                                enough.</p>
+                        </article>
+                    </div>
                 </div>
-                <button class="slider-arrow slider-next" aria-label="Next testimonials"><i class="fa fa-chevron-right"
-                        aria-hidden="true"></i></button>
+                <button class="slider-arrow slider-prev swiper-button-prev" aria-label="Previous testimonials"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="slider-arrow slider-next swiper-button-next" aria-label="Next testimonials"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
             </div>
         </section>
     </main>
 
     <footer class="site-footer" role="contentinfo">
-        <p>Footer</p>
+        <div class="footer-inner">
+            <div class="footer-stay-connected">
+                <h3 class="footer-heading">Stay Connected</h3>
+                <p class="footer-desc">Join our weekly blog & newsletter for tips on healthy living</p>
+                <form class="footer-newsletter" aria-label="Newsletter signup">
+                    <label for="footer-email-home" class="visually-hidden">Email</label>
+                    <input type="email" id="footer-email-home" name="email" class="footer-email-input" placeholder="Enter your email" required>
+                    <button type="submit" class="footer-enter-btn">Enter</button>
+                </form>
+                <div class="footer-social" aria-label="Social media">
+                    <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul class="footer-links-col">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul class="footer-links-col">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/testimonials-slider.js"></script>
 </body>
 
 </html>
