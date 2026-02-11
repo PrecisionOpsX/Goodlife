@@ -166,7 +166,44 @@
     display: flex;
     align-items: flex-start;
     gap: 10px;
+    margin-bottom: 12px;
+}
+
+.landing-form-group.landing-consent:last-of-type {
+    margin-bottom: 16px;
+}
+
+.landing-captcha-heading {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+    font-family: noto-sans-bold, sans-serif;
+}
+
+.landing-captcha-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     margin-bottom: 20px;
+}
+
+.landing-radio {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    accent-color: var(--landing-dark-green);
+}
+
+.landing-captcha-label {
+    font-size: 0.85rem;
+    color: #2c2c2c;
+    cursor: pointer;
 }
 
 .landing-input {

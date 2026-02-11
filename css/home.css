@@ -12,9 +12,7 @@
     align-items: center;
     justify-content: center;
     padding: 80px 24px 60px;
-    background-image: url(../assets/images/home-hero-bg.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: #286241;
 }
 
 .hero-content::before {
@@ -32,10 +30,10 @@
 .hero-heading-top {
     margin: 0 0 40px;
     font-size: clamp(28px, 5vw, 48px);
-    font-weight: 500;
-    color: #fff;
+    color: #C1FF72;
     text-align: center;
     line-height: 1.2;
+    font-family: noto-sans-bold;
 }
 
 .hero-service-buttons {
@@ -784,6 +782,9 @@
     background-color: #e8f5e0;
     border-radius: 8px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .testimonial-avatar {
@@ -798,6 +799,10 @@
     font-size: 14px;
     color: #444;
     line-height: 1.6;
+}
+
+.testimonial-card h4 {
+    margin: 0 0 10px;
 }
 
 /* Utility - screen reader only (shared with landing) */
