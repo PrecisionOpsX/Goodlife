@@ -42,7 +42,7 @@
     row-gap: 12px;
     column-gap: 80px;
     max-width: 700px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .hero-service-btn {
@@ -211,6 +211,14 @@
     justify-content: center;
 }
 
+.options-video-iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
 .video-play-btn {
     width: 80px;
     height: 80px;
@@ -311,6 +319,7 @@
 
 .brand-logos img {
     width: 100%;
+    height: auto;
 }
 
 /* New Patient Special */
@@ -792,7 +801,26 @@
     height: 48px;
     border-radius: 50%;
     margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
 }
+.testimonial-avatar--1 { background-color: #286241; }
+.testimonial-avatar--2 { background-color: #1565C0; }
+.testimonial-avatar--3 { background-color: #6A1B9A; }
+.testimonial-avatar--4 { background-color: #C62828; }
+.testimonial-avatar--5 { background-color: #00838F; }
+.testimonial-avatar--6 { background-color: #D84315; }
+.testimonial-avatar--7 { background-color: #2E7D32; }
+.testimonial-avatar--8 { background-color: #5C6BC0; }
+.testimonial-avatar--9 { background-color: #00695C; }
+.testimonial-avatar--10 { background-color: #7B1FA2; }
+.testimonial-avatar--11 { background-color: #0277BD; }
+.testimonial-avatar--12 { background-color: #AD1457; }
 
 .testimonial-card p {
     margin: 0;

@@ -46,7 +46,7 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 60px 24px;
     display: grid;
@@ -68,16 +68,16 @@
 }
 
 .landing-offer-price {
-    font-size: 3em;
+    font-size: 64px;
     font-weight: 700;
     color: #fff;
     line-height: 1;
     margin: 0;
-    font-family: noto-sans-bold, sans-serif;
+    font-family: noto-sans-bold;
 }
 
 .landing-offer-label {
-    font-size: 1em;
+    font-size: 20px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -88,7 +88,7 @@
     font-size: 1.25rem;
     font-weight: 600;
     color: #fff;
-    margin: 30px 0 10px;
+    margin: 10px 0 40px;
 }
 
 .landing-offer-list {
@@ -103,6 +103,7 @@
     gap: 12px;
     margin-bottom: 12px;
     color: #fff;
+    font-size: 20px;
 }
 
 .landing-check {
@@ -127,7 +128,7 @@
 }
 
 .landing-hero-desc {
-    font-size: 0.95rem;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.5;
     margin: 0;
@@ -155,7 +156,7 @@
     font-weight: 700;
     color: #000;
     text-align: center;
-    font-family: noto-sans-bold, sans-serif;
+    font-family: noto-sans-bold;
 }
 
 .landing-form-group {
@@ -179,7 +180,7 @@
     font-weight: 700;
     color: #000;
     margin-bottom: 10px;
-    font-family: noto-sans-bold, sans-serif;
+    font-family: noto-sans-bold;
 }
 
 .landing-captcha-box {
@@ -208,7 +209,7 @@
 
 .landing-input {
     width: 100%;
-    padding: 14px 16px;
+    padding: 12px 14px;
     font-size: 0.9rem;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -242,6 +243,7 @@ select.landing-input {
     color: #2c2c2c;
     line-height: 1.4;
     cursor: pointer;
+    margin-top: 2px;
 }
 
 .landing-submit-btn {
@@ -256,11 +258,134 @@ select.landing-input {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-family: noto-sans-bold, sans-serif;
+    font-family: noto-sans-bold;
 }
 
 .landing-submit-btn:hover {
     background-color: #1a6b3d;
+}
+
+/* ----- Service + Location landing hero (e.g. Physical Therapy in Redondo Beach) ----- */
+.landing-hero-service-location .landing-hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.landing-hero-service-name {
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 4px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: noto-sans-bold;
+}
+
+.landing-hero-location-heading {
+    font-size: clamp(2rem, 4.5vw, 3.25rem);
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 20px;
+    line-height: 1.15;
+    font-family: noto-sans-bold;
+}
+
+.landing-hero-contact-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.landing-hero-contact-line i {
+    color: var(--landing-bright-green);
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.landing-hero-service-desc {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.5;
+    margin: 20px 0 0;
+    max-width: 420px;
+}
+
+/* Dark green offer form (right column on service-location pages) */
+.landing-offer-form {
+    width: 100%;
+    max-width: 380px;
+    background-color: var(--landing-dark-green);
+    border-radius: 12px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.landing-offer-form .landing-offer-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 6px;
+}
+
+.landing-offer-form .landing-offer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    font-family: noto-sans-bold;
+    margin-bottom: 20px;
+}
+
+.landing-offer-form .landing-offer-includes {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0 0 4px;
+}
+
+.landing-offer-form .landing-offer-disclaimer {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    margin: 0 0 20px;
+}
+
+.landing-offer-form .landing-input {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.landing-offer-form .landing-consent-label {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.landing-offer-form .landing-submit-btn {
+    background-color: var(--landing-bright-green);
+    color: var(--landing-dark-green);
+}
+
+.landing-offer-form .landing-submit-btn:hover {
+    background-color: #a8e050;
+}
+
+.landing-offer-form select.landing-input {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23fff' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+}
+
+.landing-offer-form .landing-captcha-heading {
+    color: #fff;
+}
+
+.landing-offer-form .landing-captcha-box {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.landing-offer-form .landing-captcha-label {
+    color: #2c2c2c;
 }
 
 /* ----- Landing Services (same list as home; section styling here, grid/buttons reusable) ----- */
@@ -278,7 +403,7 @@ select.landing-input {
     font-weight: 700;
     color: var(--landing-light-heading);
     text-align: center;
-    font-family: noto-sans-bold, sans-serif;
+    font-family: noto-sans-bold;
 }
 
 /* Responsive */
@@ -290,6 +415,15 @@ select.landing-input {
 
     .landing-hero-left {
         text-align: center;
+    }
+
+    .landing-hero-service-location .landing-hero-service-desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .landing-hero-service-location .landing-hero-contact-line {
+        justify-content: center;
     }
 
     .landing-offer-list li {
