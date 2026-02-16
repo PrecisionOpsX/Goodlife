@@ -331,6 +331,7 @@ select.landing-input {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin: 0 0 6px;
+    text-align: center;
 }
 
 .landing-offer-form .landing-offer-title {
@@ -340,6 +341,7 @@ select.landing-input {
     margin: 0;
     font-family: noto-sans-bold;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .landing-offer-form .landing-offer-includes {
