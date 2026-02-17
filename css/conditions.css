@@ -1,0 +1,247 @@
+/* Conditions page – Where Does It Hurt */
+
+/* ----- Hero (brick texture) ----- */
+.conditions-hero {
+    background-color: #e8e6e3;
+    background-image: url("../assets/images/Conditions/brick-wall.jpg");
+    padding: 56px 24px 48px;
+    text-align: center;
+    min-height: 320px;
+    font-family: noto-sans-bold, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conditions-hero-title {
+    margin: 0 0 12px;
+    font-size: 70px;
+    font-weight: 700;
+    color: #3c4b58;
+    font-family: noto-sans-bold;
+    letter-spacing: -0.02em;
+}
+
+.conditions-breadcrumb {
+    font-size: 14px;
+    color: #6b6b6b;
+    font-family: noto-sans, sans-serif;
+}
+
+.conditions-breadcrumb a {
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+.conditions-breadcrumb a:hover {
+    color: #286241;
+    text-decoration: underline;
+}
+
+.conditions-breadcrumb-sep {
+    margin: 0 6px;
+}
+
+/* ----- Conditions grid ----- */
+.conditions-grid-section {
+    background: #fff;
+    padding: 80px 24px;
+}
+
+.conditions-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 24px;
+    justify-items: center;
+}
+
+.condition-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.condition-card:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.condition-card:focus-visible {
+    outline: 2px solid #286241;
+    outline-offset: 4px;
+}
+
+.condition-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 3px solid #b8860b;
+    background: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.condition-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.condition-label {
+    margin-top: 16px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #3c4b58;
+    font-family: noto-sans-bold, sans-serif;
+    text-align: center;
+}
+
+/* ----- CTA (dark green) ----- */
+.conditions-cta {
+    background-color: #334037;
+    padding: 96px 24px;
+    text-align: center;
+}
+
+.conditions-cta-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.conditions-cta-mission {
+    margin: 0;
+    font-size: 22px;
+    color: #fff;
+    font-family: noto-sans, sans-serif;
+    line-height: 1.5;
+}
+
+.conditions-cta-headline {
+    margin: 0 0 28px;
+    font-size: 58px;
+    font-weight: 700;
+    color: #fff;
+    font-family: noto-sans-bold, sans-serif;
+}
+
+.conditions-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.conditions-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: noto-sans-semibold, sans-serif;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.conditions-cta-btn:hover {
+    background: #fff;
+    color: #286241;
+}
+
+.conditions-cta-btn:focus-visible {
+    outline: 2px solid #C1FF72;
+    outline-offset: 2px;
+}
+
+.conditions-cta-btn i {
+    font-size: 18px;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 900px) {
+    .conditions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px 20px;
+    }
+
+    .condition-circle {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 500px) {
+    .conditions-hero {
+        padding: 40px 16px 36px;
+    }
+
+    .conditions-hero-title {
+        font-size: 26px;
+    }
+
+    .conditions-breadcrumb {
+        font-size: 13px;
+    }
+
+    .conditions-grid-section {
+        padding: 36px 16px 44px;
+    }
+
+    .conditions-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .condition-circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .condition-label {
+        font-size: 17px;
+    }
+
+    .conditions-cta {
+        padding: 40px 16px 48px;
+    }
+
+    .conditions-cta-mission {
+        font-size: 16px;
+    }
+
+    .conditions-cta-headline {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    .conditions-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conditions-cta-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}

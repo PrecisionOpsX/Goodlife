@@ -33,7 +33,7 @@
             <ul class="nav-links">
                 <li><a href="./about.html" class="nav-link-item">About</a></li>
                 <li class="nav-item-dropdown">
-                    <a href="#" class="nav-link-item nav-link-with-arrow">Conditions</a>
+                    <a href="./conditions.html" class="nav-link-item nav-link-with-arrow">Conditions</a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-item-has-children">
                             <a href="#">Back Pain</a>
@@ -121,22 +121,20 @@
 
     <main>
         <section class="hero-section" aria-label="Hero">
-            <div class="hero-content">
-                <h1 class="hero-heading-top">How can we help you today?</h1>
-                <div class="hero-service-buttons">
-                    <a href="#" class="hero-service-btn">Pain Management</a>
-                    <a href="#" class="hero-service-btn">Chiropractic</a>
-                    <a href="#" class="hero-service-btn">Physical Therapy</a>
-                    <a href="#" class="hero-service-btn">Botox for Migraines</a>
-                    <a href="#" class="hero-service-btn">Massage Therapy</a>
-                    <a href="#" class="hero-service-btn">Regenerative Medicine</a>
-                    <a href="#" class="hero-service-btn">Medical Weight Loss</a>
-                    <a href="#" class="hero-service-btn">Orthopedic</a>
-                    <a href="#" class="hero-service-btn">Physical Medicine</a>
+            <div class="hero-slideshow swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero-slide" style="background-image: url(./assets/images/home-hero-slideshow/home-hero-bg.jpg);"></div>
+                    <div class="swiper-slide hero-slide" style="background-image: url(./assets/images/home-hero-slideshow/2266490.jpg);"></div>
+                    <div class="swiper-slide hero-slide" style="background-image: url(./assets/images/home-hero-slideshow/2266493.jpg);"></div>
+                    <div class="swiper-slide hero-slide" style="background-image: url(./assets/images/home-hero-slideshow/2266494.jpg);"></div>
                 </div>
-                <h2 class="hero-heading-bottom">Let our team of experts identify the root problem and solution to
-                    eliminate your pain for good.</h2>
-                <a href="#" class="hero-cta-btn">BOOK A FREE CONSULTATION</a>
+            </div>
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1 class="hero-heading">All Things Physical Health Under One Roof</h1>
+                    <p class="hero-description">Let our team of experts identify the root problem and solution to eliminate your pain for good.</p>
+                    <a href="#" class="section-btn section-btn-green">Book a free consultation</a>
+                </div>
             </div>
         </section>
 
@@ -434,6 +432,7 @@
         </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/hero-slider.js"></script>
     <script src="./js/testimonials-slider.js"></script>
     <script src="./js/newsletter-submit.js"></script>
     <script src="./js/video-embed.js"></script>
