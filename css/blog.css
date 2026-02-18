@@ -1,6 +1,5 @@
 .blogs-hero {
-    background-color: #e8e6e3;
-    background-image: url("../assets/images/Conditions/brick-wall.jpg");
+    background-color: #286241;
     padding: 56px 24px 48px;
     text-align: center;
     min-height: 320px;
@@ -15,24 +14,24 @@
     margin: 0 0 12px;
     font-size: 70px;
     font-weight: 700;
-    color: #3c4b58;
+    color: #fff;
     font-family: noto-sans-bold;
     letter-spacing: -0.02em;
 }
 
 .blogs-breadcrumb {
     font-size: 14px;
-    color: #6b6b6b;
+    color: #fff;
     font-family: noto-sans, sans-serif;
 }
 
 .blogs-breadcrumb a {
-    color: #6b6b6b;
+    color: #fff;
     text-decoration: none;
 }
 
 .blogs-breadcrumb a:hover {
-    color: #286241;
+    color: #C1FF72;
     text-decoration: underline;
 }
 
