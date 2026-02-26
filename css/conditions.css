@@ -240,6 +240,10 @@
     background-color: #359F49;
 }
 
+.conditions-level-block.level-2.additional {
+    margin-top: -60px;
+}
+
 .conditions-level-block.level-3 {
     background-color: #286241;
 }
@@ -462,10 +466,21 @@
     border-top: 18px solid currentColor;
 }
 
-.arrow-yellow { color: #fdd835; }
-.arrow-orange { color: #ff9800; }
-.arrow-red { color: #e53935; }
-.arrow-dark-green { color: #286241; }
+.arrow-yellow {
+    color: #fdd835;
+}
+
+.arrow-orange {
+    color: #ff9800;
+}
+
+.arrow-red {
+    color: #e53935;
+}
+
+.arrow-dark-green {
+    color: #286241;
+}
 
 .healing-roadmap-cards-row {
     display: grid;
