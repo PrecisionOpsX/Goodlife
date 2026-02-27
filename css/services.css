@@ -220,6 +220,10 @@
     margin-bottom: 10px;
 }
 
+.service-desc-card .title span {
+    font-size: 20px;
+}
+
 .service-desc-card .description {
     margin: 0;
     font-size: 17px;
