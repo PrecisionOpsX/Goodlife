@@ -183,8 +183,19 @@
 
 .service-desc-section {
     width: 100%;
-    background-color: #acacac;
+    background-color: #d1d1d1;
     padding: 24px;
+}
+
+.service-desc-section .section-title {
+    margin: 0;
+    font-family: noto-sans-bold;
+    margin-top: 10px;
+}
+
+.service-desc-section .section-desc {
+    margin: 40px 0;
+    text-align: center;
 }
 
 .service-desc-inner {
@@ -258,6 +269,8 @@
 .how-it-works-row {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-top: 20px;
 }
@@ -291,7 +304,6 @@
     }
 
     .how-it-works-row {
-        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
