@@ -1,0 +1,133 @@
+/* Verify Insurance page – companies section, form, insurance logo grid */
+
+/* ----- Companies / Insurance logos section ----- */
+.companies-section {
+    background-color: #fff;
+    padding: 48px 24px 32px;
+}
+
+.companies-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.companies-inner h2 {
+    font-size: clamp(18px, 2.5vw, 22px);
+    color: #333;
+    text-align: center;
+    margin: 0 0 28px;
+    font-family: noto-sans-bold, sans-serif;
+}
+
+/* Verify page: insurance logo grid – 2 rows x 4 columns, equal white boxes */
+.verify-page .insurance-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.verify-page .brand-logos {
+    aspect-ratio: 1;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.verify-page .brand-logos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.companies-inner > p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----- Google form section ----- */
+.google-form-section {
+    background-color: #f5f5f5;
+    padding: 32px 24px 60px;
+}
+
+.google-form-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.google-form-inner h4 {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 20px;
+    font-family: noto-sans, sans-serif;
+    text-align: center;
+}
+
+.google-form-inner .verify-form-embed {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    padding: 24px;
+}
+
+.verify-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.verify-form-fields label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.verify-form-fields input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.verify-form-fields button {
+    margin-top: 8px;
+}
+
+/* Responsive: verify insurance grid */
+@media (max-width: 768px) {
+    .verify-page .insurance-logos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .companies-section {
+        padding: 32px 16px 24px;
+    }
+
+    .google-form-section {
+        padding: 24px 16px 48px;
+    }
+
+    .google-form-inner .verify-form-embed {
+        min-height: 400px;
+    }
+}

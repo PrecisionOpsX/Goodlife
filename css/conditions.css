@@ -384,9 +384,6 @@
 }
 
 /* ----- Healing Roadmap / Levels of Care (3-box row) ----- */
-.healing-roadmap-section {
-    margin-top: 70px;
-}
 .roadmap-section-title {
     font-size: 30px;
     font-family: noto-sans-bold;
@@ -482,6 +479,10 @@
     background: #286241;
 }
 
+.healing-roadmap-section {
+    padding: 0 20px;
+}
+
 /* ----- Responsive ----- */
 @media (max-width: 900px) {
     .conditions-grid {
@@ -502,10 +503,6 @@
 @media (max-width: 600px) {
     .conditions-level-block {
         padding: 24px 16px 32px;
-    }
-
-    .healing-roadmap-section {
-        padding: 40px 16px 48px;
     }
 
     .healing-roadmap-row {
@@ -581,10 +578,6 @@
         width: 100%;
         max-width: 280px;
         justify-content: center;
-    }
-
-    .healing-roadmap-section {
-        padding: 32px 16px 40px;
     }
 
     .healing-roadmap-box {

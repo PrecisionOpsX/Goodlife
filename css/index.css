@@ -255,6 +255,9 @@ body {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    font-family: inherit;
 }
 
 .header-action-btns:hover {

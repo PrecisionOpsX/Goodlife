@@ -9,22 +9,20 @@
     <meta name="keywords"
         content="physical medicine, chiropractic, pain management, physical therapy, South Bay Los Angeles, regenerative therapy">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
     <title>Goodlife Physical Medicine & Chiropractic | Pain Management & Physical Therapy</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/landing.css">
     <link rel="stylesheet" href="./css/conditions.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 
 <body>
     <div class="top-banner">
         <h3>New Patient Special for only $39</h3>
     </div>
-
+    <!-- Header section -->
     <header class="header">
         <a href="./index.html" class="logo-link">
             <img src="./assets/images/logo.png" alt="Goodlife Physical Medicine" class="logo-img">
@@ -83,6 +81,7 @@
                         </li>
                         <li class="dropdown-item-has-children">
                             <a href="#">Interventional Care Treatments</a>
+
                             <ul class="dropdown-submenu">
                                 <li><a href="./services/transforminal-epidural.html">Transforaminal epidural
                                         injections</a></li>
@@ -105,6 +104,7 @@
                         </li>
                         <li class="dropdown-item-has-children">
                             <a href="#">Orthopedic Care Treatments</a>
+
                             <ul class="dropdown-submenu">
                                 <li><a href="./services/knee-replacement.html">Knee Replacement</a></li>
                                 <li><a href="./services/hip-replacement.html">Hip Replacement</a></li>
@@ -124,13 +124,13 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#" class="nav-link-item">Locations</a></li>
+                <li><a href="./contact.html#locations" class="nav-link-item">Locations</a></li>
                 <li><a href="./blog.html" class="nav-link-item">Blog</a></li>
             </ul>
         </nav>
         <div class="action-group action-group-desktop">
-            <button class="header-action-btns">Call us</button>
-            <button class="header-action-btns">Verify insurance</button>
+            <a href="./contact.html" class="header-action-btns">Call us</a>
+            <a href="./verify.html" class="header-action-btns">Verify insurance</a>
         </div>
         <button class="mobile-menu-btn" aria-label="Toggle menu">
             <span class="hamburger-line"></span>
@@ -140,260 +140,94 @@
     </header>
 
     <main>
-        <section class="landing-hero" aria-label="New patient offer">
-            <div class="landing-hero-bg" style="background-image: url(./assets/images/home-hero-bg.jpg);" role="img"
-                aria-hidden="true"></div>
-            <div class="landing-hero-overlay"></div>
-            <div class="landing-hero-inner">
-                <div class="landing-hero-left">
-                    <div class="landing-offer-price-row">
-                        <p class="landing-offer-price">$39</p>
-                        <p class="landing-offer-label">NEW PATIENT OFFER</p>
-                    </div>
-                    <h2 class="landing-offer-heading">New Patient Experience Includes:</h2>
-                    <ul class="landing-offer-list">
-                        <li><span class="landing-check" aria-hidden="true"></span>Focused Exam</li>
-                        <li><span class="landing-check" aria-hidden="true"></span>X-Rays (if needed)</li>
-                        <li><span class="landing-check" aria-hidden="true"></span>First Treatment.</li>
-                    </ul>
-                    <p class="landing-hero-desc">Let our team of experts identify the root problem and solution to
-                        eliminate your pain for good.</p>
-                </div>
-                <div class="landing-hero-right">
-                    <form class="landing-offer-form" aria-labelledby="consultation-heading">
-                        <h3 id="consultation-heading" class="landing-offer-title">Get a FREE Consultation</h3>
-                        <div class="landing-form-group">
-                            <label for="landing-location" class="visually-hidden">Location</label>
-                            <select id="landing-location" name="location" class="landing-input">
-                                <option value="">LOCATION</option>
-                            </select>
-                        </div>
-                        <div class="landing-form-group">
-                            <label for="landing-name" class="visually-hidden">Name</label>
-                            <input type="text" id="landing-name" name="name" class="landing-input" placeholder="NAME">
-                        </div>
-                        <div class="landing-form-group">
-                            <label for="landing-email" class="visually-hidden">Email</label>
-                            <input type="email" id="landing-email" name="email" class="landing-input"
-                                placeholder="EMAIL*" required>
-                        </div>
-                        <div class="landing-form-group">
-                            <label for="landing-phone" class="visually-hidden">Phone</label>
-                            <input type="tel" id="landing-phone" name="phone" class="landing-input" placeholder="PHONE">
-                        </div>
-                        <div class="landing-form-group landing-consent">
-                            <input type="checkbox" id="landing-consent" name="consent" class="landing-checkbox">
-                            <label for="landing-consent" class="landing-consent-label">I agree to the Privacy Policy and
-                                consent to be contacted.</label>
-                        </div>
-                        <div class="landing-form-group landing-consent">
-                            <input type="checkbox" id="landing-newsletter" name="newsletter" class="landing-checkbox">
-                            <label for="landing-newsletter" class="landing-consent-label">Subscribe to Newsletter &amp;
-                                Blog.</label>
-                        </div>
-                        <div class="landing-form-group landing-captcha">
-                            <div class="landing-captcha-box">
-                                <input type="radio" id="landing-captcha" name="captcha" value="not-robot"
-                                    class="landing-radio">
-                                <label for="landing-captcha" class="landing-captcha-label">I'm not a robot</label>
-                            </div>
-                        </div>
-                        <button type="submit" class="landing-submit-btn">CLAIM OFFER</button>
-                    </form>
-                </div>
-            </div>
+        <section class="about-page-banner" aria-label="Book appointment online">
+            <h1>BOOK ONLINE</h1>
         </section>
 
-        <section class="stats-bar" aria-label="Practice statistics">
-            <div class="stats-inner">
-                <div class="stat-item">
-                    <span class="stat-number">24,000</span>
-                    <span class="stat-label">Happy clients</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">4</span>
-                    <span class="stat-label">Locations</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">15 Years</span>
-                    <span class="stat-label">Community favorite</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">30+ Years</span>
-                    <span class="stat-label">experience</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="healing-roadmap-section">
-            <div class="healing-roadmap-inner">
-                <div class="healing-roadmap-row">
-                    <div class="healing-roadmap-box box-1">
-                        <h3 class="healing-roadmap-box-title">Conventional Care</h3>
-                        <span class="healing-roadmap-icon" aria-hidden="true"><i class="fa fa-stethoscope"></i></span>
-                        <p class="healing-roadmap-box-desc">Non-invasive treatments designed to reduce pain, improve
-                            mobility, and enhance overall function. These therapies are often the first step in care to
-                            release pressure. The goal is to calm symptoms while supporting the body's natural healing
-                            processes</p>
+        <section class="book-online-section">
+            <div class="book-online-inner">
+                <div class="book-scheduler-placeholder">
+                    <h3>Schedule Your Appointment Online</h3>
+                    <p>Book your appointment at any of our convenient locations. New and existing patients welcome.</p>
+                    <div class="book-steps">
+                        <span class="book-step book-step-active"><span class="book-step-num">1</span> PREFERENCES</span>
+                        <span class="book-step"><span class="book-step-num">2</span> DATE &amp; TIME</span>
+                        <span class="book-step"><span class="book-step-num">3</span> YOUR INFO</span>
+                        <span class="book-step"><span class="book-step-num">4</span> CONFIRM</span>
                     </div>
-                    <div class="healing-roadmap-box box-2">
-                        <h3 class="healing-roadmap-box-title">Interventional Care</h3>
-                        <span class="healing-roadmap-icon" aria-hidden="true"><i class="fa fa-hand-paper-o"></i></span>
-                        <p class="healing-roadmap-box-desc">Minimally invasive medical procedures desgined to directly
-                            address the underlying cause of pain rather than just managing symptoms. These options are
-                            often used when conservative care alone is not sufficient.</p>
+                    <div class="book-preferences">
+                        <h4>Select Your Preferences</h4>
+                        <p>Choose your preferred location, specialty, appointment type, and provider. All fields except location and appointment type are optional.</p>
+                        <label>Location *</label>
+                        <select aria-label="Location"><option>Select a location</option></select>
+                        <label>Specialty (Optional)</label>
+                        <select aria-label="Specialty"><option>Any Specialty</option></select>
+                        <label>Appointment Type *</label>
+                        <select aria-label="Appointment type"><option>Select appointment type</option></select>
+                        <label>Provider (Optional)</label>
+                        <select aria-label="Provider"><option>Any Provider</option></select>
+                        <button type="button" class="section-btn section-btn-green">Find Available Times &gt;</button>
+                        <p class="book-hint">Please select a location and appointment type to continue</p>
                     </div>
-                    <div class="healing-roadmap-box box-3">
-                        <h3 class="healing-roadmap-box-title">Orthopedic Care</h3>
-                        <span class="healing-roadmap-icon" aria-hidden="true"><i class="fa fa-medkit"></i></span>
-                        <p class="healing-roadmap-box-desc">Treatment of structural musculoskeletal conditions, often
-                            when conservative and interventional options are no longer effective. This level of care may
-                            involve surgical procedures relieve nerve pressure and treat pain sources.</p>
+                </div>
+                <div class="book-map-placeholder" aria-label="Map placeholder">
+                    <div class="book-map-placeholder-inner">
+                        <span class="book-map-pin" aria-hidden="true"></span>
+                        <p>Map widget placeholder</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="options-affordability" aria-labelledby="options-heading">
-            <div class="options-affordability-inner">
-                <article class="options-column">
-                    <div class="options-text">
-                        <h2 id="options-heading" class="options-heading">Know All Your Options<br /><span>(Before Drugs
-                                or Surgery)</span></h2>
-                        <p class="option-text">Our team of diverse professionals combine a holistic approach to address
-                            pain at the
-                            source.</p>
-                    </div>
-                    <div class="options-video" data-youtube-id="SE9E2UcAi1w" data-youtube-start="11"
-                        style="background-image: url(https://img.youtube.com/vi/SE9E2UcAi1w/sddefault.jpg);"
-                        aria-label="Video: Patient treatment demonstration">
-                        <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=SE9E2UcAi1w"
-                            target="_blank"><button class="video-play-btn" aria-label="Play video" type="button"><i
-                                    class="fa fa-play" aria-hidden="true"></i></button></a>
-                    </div>
-                    <a href="#" class="section-btn section-btn-green">Book a free consultation</a>
-                </article>
-                <article class="affordability-column">
-                    <h2 class="options-heading">Know your coverage<br /><span>(You may be covered)</span></h2>
-                    <p class="option-text">Proud providers of major insurance companies</p>
-                    <div class="insurance-logos" aria-label="Accepted insurance providers">
-                        <div class="brand-logos">
-                            <img src="./assets/images/brand-logo (1).png" alt="Brand logo" />
-                        </div>
-                        <div class="brand-logos">
-                            <img src="./assets/images/brand-logo (2).png" alt="Brand logo" />
-                        </div>
-                        <div class="brand-logos">
-                            <img src="./assets/images/brand-logo (3).png" alt="Brand logo" />
-                        </div>
-                        <div class="brand-logos">
-                            <img src="./assets/images/brand-logo (4).png" alt="Brand logo" />
-                        </div>
-                        <div class="brand-logos">
-                            <img src="./assets/images/brand-logo (5).png" alt="Brand logo" />
-                        </div>
-                        <div class="brand-logos">
-                            <img src="./assets/images/brand-logo (6).png" alt="Brand logo" />
-                        </div>
-                        <div class="brand-logos">
-                            <img src="./assets/images/brand-logo (7).png" alt="Brand logo" />
-                        </div>
-                    </div>
-                    <a href="#" class="section-btn section-btn-green">Verify My Insurance</a>
-                </article>
-            </div>
-        </section>
-
-        <section class="about-section" aria-labelledby="about-heading">
-            <div class="about-inner">
-                <img src="./assets/images/About us.webp" class="about-image" alt="About Us" />
-                <article class="about-content">
-                    <h2 id="about-heading">Welcome to the Goodlife</h2>
-                    <p>Goodlife Physical Medicine delivers integrated, patient-focused care through a team of
-                        specialists in chiropractic, pain management, physical medicine, and conventional medicine.
-                        Using an integrative approach, the team combines traditional medical care with complementary
-                        therapies to create customized treatment plans.</p>
-                    <p>As a multidisciplinary one-stop clinic, Goodlife offers on-site diagnostic imaging, including
-                        digital X-rays, ultrasound, and MRI, allowing for fast and accurate diagnoses. The focus is on
-                        long-term relief and overall wellness without relying on addictive medications, unnecessary
-                        surgery, or invasive procedures.</p>
-                    <button class="section-btn section-btn-green">Read More About Us</button>
-                </article>
-            </div>
-        </section>
-
+        <!-- Locations (same as index.html) -->
         <section class="locations-section" aria-labelledby="locations-heading">
             <h2 id="locations-heading">4 Locations: Serving the South Bay of Los Angeles</h2>
             <div class="locations-grid">
-                <a href="#" class="location-card">
-                    <div class="location-image" style="background-image: url(./assets/images/Seal\ Beach.jpg);"
-                        role="img" aria-label="Seal Beach location"></div>
+                <a href="./contact.html" class="location-card">
+                    <div class="location-image" style="background-image: url(./assets/images/Seal\ Beach.jpg);" role="img" aria-label="Seal Beach location"></div>
                     <span class="location-name">Seal Beach</span>
                 </a>
-                <a href="#" class="location-card">
-                    <div class="location-image" style="background-image: url(./assets/images/Redondo\ Beach.jpg);"
-                        role="img" aria-label="Redondo Beach location"></div>
+                <a href="./contact.html" class="location-card">
+                    <div class="location-image" style="background-image: url(./assets/images/Redondo\ Beach.jpg);" role="img" aria-label="Redondo Beach location"></div>
                     <span class="location-name">Redondo Beach</span>
                 </a>
-                <a href="#" class="location-card">
-                    <div class="location-image" style="background-image: url(./assets/images/torrance.webp);" role="img"
-                        aria-label="Torrance location"></div>
+                <a href="./contact.html" class="location-card">
+                    <div class="location-image" style="background-image: url(./assets/images/torrance.webp);" role="img" aria-label="Torrance location"></div>
                     <span class="location-name">Torrance</span>
                 </a>
-                <a href="#" class="location-card">
-                    <div class="location-image" style="background-image: url(./assets/images/El\ Segundo.jpg);"
-                        role="img" aria-label="El Segundo location"></div>
+                <a href="./contact.html" class="location-card">
+                    <div class="location-image" style="background-image: url(./assets/images/El\ Segundo.jpg);" role="img" aria-label="El Segundo location"></div>
                     <span class="location-name">El Segundo</span>
                 </a>
             </div>
-
-            <div class="schedule-section" aria-labelledby="schedule-heading">
-                <div class="schedule-sectione-inner">
-                    <img src="./assets/images/map.jpg" alt="Map" class="schedule-map">
-                    <form class="schedule-form">
-                        <h3>Schedule Your Appointment Online</h3>
-                        <div class="schedule-form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name">
-                        </div>
-                    </form>
-                </div>
-            </div>
         </section>
 
+        <!-- Testimonials (same as index.html) -->
         <section class="testimonials-section" aria-labelledby="testimonials-heading">
             <h2 id="testimonials-heading">How We've Helped Others the Goodlife Way</h2>
             <div class="slider-row">
-                <button class="slider-arrow slider-prev swiper-button-prev" aria-label="Previous testimonials"><i
-                        class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="slider-arrow slider-prev swiper-button-prev" aria-label="Previous testimonials"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
                 <div class="testimonials-slider">
                     <div class="swiper-wrapper">
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--1" aria-hidden="true">A</span>
                             <h4>Alexis A.</h4>
-                            <p>The Staff Was Amazing All Of Them Were So Nice Helpful Definitely Would Recommend This
-                                Place I’m Very Happy With The Care I Received
-                            </p>
+                            <p>The Staff Was Amazing All Of Them Were So Nice Helpful Definitely Would Recommend This Place I'm Very Happy With The Care I Received</p>
                         </article>
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--2" aria-hidden="true">W</span>
                             <h4>Wendy H.</h4>
-                            <p>Dr. is great with explaining everything he is doing while working with you and listening
-                                to what works best for you. Very nice and clean office as well!</p>
+                            <p>Dr. is great with explaining everything he is doing while working with you and listening to what works best for you. Very nice and clean office as well!</p>
                         </article>
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--3" aria-hidden="true">K</span>
                             <h4>Karen M.</h4>
-                            <p>These Therapists know their jobs. You give them the target area and I guarantee you will
-                                be better! Plus give you exercises to do at home in between or after care discharge.</p>
+                            <p>These Therapists know their jobs. You give them the target area and I guarantee you will be better! Plus give you exercises to do at home in between or after care discharge.</p>
                         </article>
-
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--4" aria-hidden="true">C</span>
                             <h4>Chuck M.</h4>
-                            <p>They are very caring about their patients and their on top of their job and it’s slowly
-                                working for sure thank for taking care of me!!
-                            </p>
+                            <p>They are very caring about their patients and their on top of their job and it's slowly working for sure thank for taking care of me!!</p>
                         </article>
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--5" aria-hidden="true">K</span>
@@ -408,46 +242,36 @@
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--7" aria-hidden="true">J</span>
                             <h4>Janice V.</h4>
-                            <p>I've said it before and I'll say it again. Goodlife Chiropractic in El Segundo is the
-                                hippest most user friendly office in town! You Go Dr. Matt!!</p>
+                            <p>I've said it before and I'll say it again. Goodlife Chiropractic in El Segundo is the hippest most user friendly office in town! You Go Dr. Matt!!</p>
                         </article>
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--8" aria-hidden="true">D</span>
                             <h4>Destiny S.</h4>
-                            <p>Came here because of an injury and was nervous but Brock made me super comfortable and I
-                                have came here 3 times already and I feel 10 times better! Highly recommend</p>
+                            <p>Came here because of an injury and was nervous but Brock made me super comfortable and I have came here 3 times already and I feel 10 times better! Highly recommend</p>
                         </article>
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--9" aria-hidden="true">C</span>
                             <h4>Colby P</h4>
-                            <p>Dr. Clements really wants to help his parents and takes the time to really listen to you.
-                                The front desk gals are always friendly without fail. I’m so happy I found this place!
-                            </p>
+                            <p>Dr. Clements really wants to help his parents and takes the time to really listen to you. The front desk gals are always friendly without fail. I'm so happy I found this place!</p>
                         </article>
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--10" aria-hidden="true">S</span>
                             <h4>Sarah K.</h4>
-                            <p>Dr. Jeff is awesome and so is Charlie. I walk in and the know me and I feel extremely
-                                comfortable knowing my health is priority. I leave better each time I visit. Luv luv
-                                them ....</p>
+                            <p>Dr. Jeff is awesome and so is Charlie. I walk in and the know me and I feel extremely comfortable knowing my health is priority. I leave better each time I visit. Luv luv them ....</p>
                         </article>
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--11" aria-hidden="true">E</span>
                             <h4>Evan F.</h4>
-                            <p>Dr. Dave is great and found my shoulder problem quickly and eased my concerns and Leslie
-                                helped me so much with PT.</p>
+                            <p>Dr. Dave is great and found my shoulder problem quickly and eased my concerns and Leslie helped me so much with PT.</p>
                         </article>
                         <article class="testimonial-card swiper-slide">
                             <span class="testimonial-avatar testimonial-avatar--12" aria-hidden="true">P</span>
                             <h4>Pauline C.</h4>
-                            <p>Goodlife has been key to my physical health and pain management journey. I initially
-                                discovered this practice through Groupon and loved it so much that I’ve been going back
-                                weekly since August 2023…</p>
+                            <p>Goodlife has been key to my physical health and pain management journey. I initially discovered this practice through Groupon and loved it so much that I've been going back weekly since August 2023…</p>
                         </article>
                     </div>
                 </div>
-                <button class="slider-arrow slider-next swiper-button-next" aria-label="Next testimonials"><i
-                        class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <button class="slider-arrow slider-next swiper-button-next" aria-label="Next testimonials"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
             </div>
         </section>
     </main>
@@ -499,24 +323,25 @@
             </div>
             <nav class="footer-nav" aria-label="Footer navigation">
                 <ul class="footer-links-col">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Locations</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html#locations">Locations</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                 </ul>
                 <ul class="footer-links-col">
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/hero-slider.js"></script>
     <script src="./js/testimonials-slider.js"></script>
     <script src="./js/newsletter-submit.js"></script>
-    
+
 </body>
 
 </html>
