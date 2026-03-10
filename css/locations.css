@@ -1,0 +1,45 @@
+.hero-content {
+    max-width: 590px;
+}
+
+.location-hero-title {
+    margin: 0 0 20px;
+    font-size: clamp(28px, 4vw, 42px);
+    color: #fff;
+    font-family: noto-sans-bold;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.location-hero-title span {
+    font-size: 30px;
+}
+
+.location-hero-subtitle {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #C1FF72;
+    font-family: noto-sans-bold;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-style: italic;
+}
+
+.hero-description {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.5;
+    font-family: noto-sans;
+    margin-bottom: 30px;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: noto-sans;
+}
