@@ -665,3 +665,38 @@ body {
         max-width: 100%;
     }
 }
+
+.privacy-statement {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+}
+
+.privacy-statement-title {
+    margin: 0 0 24px;
+    font-size: 1.75rem;
+    font-family: noto-sans-bold, sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.privacy-statement > p {
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #656f72;
+    text-align: justify;
+}
+
+.privacy-section-heading {
+    margin: 28px 0 12px;
+    font-size: 1.15rem;
+    font-family: noto-sans-semibold, sans-serif;
+    color: #333;
+    font-weight: 600;
+}
+
+.privacy-statement .privacy-section-heading + p {
+    margin-top: 0;
+}
