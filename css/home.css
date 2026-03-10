@@ -68,7 +68,6 @@
     margin-bottom: 30px;
 }
 
-/* Responsive hero */
 @media (max-width: 768px) {
     .hero-overlay {
         width: 100%;
@@ -96,7 +95,6 @@
     }
 }
 
-/* CTA Strip */
 .cta-strip {
     background-color: #286241;
     padding: 40px 24px;
@@ -114,7 +112,6 @@
     line-height: 1.4;
 }
 
-/* Options & Affordability Section */
 .options-affordability {
     background: #fff;
     padding: 70px 24px;
