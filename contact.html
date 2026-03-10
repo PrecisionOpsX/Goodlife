@@ -143,59 +143,6 @@
         <section class="about-page-banner" aria-label="Contact Goodlife Physical Medicine">
             <h1>CONTACT US</h1>
         </section>
-
-        <section class="contact-form-section">
-            <div class="contact-form-inner">
-                <h2 class="form-title">If you would like to book an appointment for a free consultation, please use <a
-                        href="./book.html">our scheduler here.</a></h2>
-                <p class="form-description">If you have any questions, concerns, or comments regarding Goodlife Physical Medicine, please fill
-                    out the short contact form below.</p>
-
-                <form class="contact-form" action="#" method="post" aria-label="Contact form">
-                    <div class="contact-form-grid">
-                        <div class="contact-form-col">
-                            <label for="contact-name">NAME</label>
-                            <input type="text" id="contact-name" name="name" required>
-                            <label for="contact-email">EMAIL ADDRESS</label>
-                            <input type="email" id="contact-email" name="email" required>
-                            <label for="contact-phone">PHONE NUMBER</label>
-                            <input type="tel" id="contact-phone" name="phone">
-                            <label for="contact-location">LOCATION</label>
-                            <select id="contact-location" name="location">
-                                <option value="">- Select One -</option>
-                                <option value="seal-beach">Seal Beach</option>
-                                <option value="redondo-beach">Redondo Beach</option>
-                                <option value="torrance">Torrance</option>
-                                <option value="el-segundo">El Segundo</option>
-                            </select>
-                            <label for="contact-doctor">DOCTOR</label>
-                            <select id="contact-doctor" name="doctor">
-                                <option value="">- Select One -</option>
-                                <option value="adam-weitzman">Adam Weitzman, MD</option>
-                                <option value="dave-carry">Dave Carry, DC</option>
-                            </select>
-                        </div>
-                        <div class="contact-form-col">
-                            <label for="contact-message">MESSAGE</label>
-                            <textarea id="contact-message" name="message" rows="8"
-                                placeholder="Your message..."></textarea>
-                        </div>
-                    </div>
-                    <p class="contact-form-disclaimer">
-                        <label class="contact-checkbox-label">
-                            <input type="checkbox" name="disclaimer" required>
-                            I understand and agree that any information submitted will be forwarded to our office by
-                            email and not via a secure messaging system. This form should not be used to transmit
-                            private health information, and we disclaim all warranties with respect to the privacy and
-                            confidentiality of any information submitted through this form.
-                        </label>
-                    </p>
-                    <button type="submit" class="section-btn section-btn-green">Submit</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- Locations (card layout per design) -->
         <section class="contact-locations-section" id="locations" aria-labelledby="contact-locations-heading">
             <h2 id="contact-locations-heading" class="visually-hidden">Our Locations</h2>
             <div class="contact-locations-grid">
@@ -300,6 +247,57 @@
                 </article>
             </div>
         </section>
+
+        <section class="contact-form-section">
+            <div class="contact-form-inner">
+                <h2 class="form-title">If you would like to book an appointment for a free consultation, please use <a
+                        href="./book.html">our scheduler here.</a></h2>
+                <p class="form-description">If you have any questions, concerns, or comments regarding Goodlife Physical Medicine, please fill
+                    out the short contact form below.</p>
+
+                <form class="contact-form" action="#" method="post" aria-label="Contact form">
+                    <div class="contact-form-grid">
+                        <div class="contact-form-col">
+                            <label for="contact-name">NAME</label>
+                            <input type="text" id="contact-name" name="name" required>
+                            <label for="contact-email">EMAIL ADDRESS</label>
+                            <input type="email" id="contact-email" name="email" required>
+                            <label for="contact-phone">PHONE NUMBER</label>
+                            <input type="tel" id="contact-phone" name="phone">
+                            <label for="contact-location">LOCATION</label>
+                            <select id="contact-location" name="location">
+                                <option value="">- Select One -</option>
+                                <option value="seal-beach">Seal Beach</option>
+                                <option value="redondo-beach">Redondo Beach</option>
+                                <option value="torrance">Torrance</option>
+                                <option value="el-segundo">El Segundo</option>
+                            </select>
+                            <label for="contact-doctor">DOCTOR</label>
+                            <select id="contact-doctor" name="doctor">
+                                <option value="">- Select One -</option>
+                                <option value="adam-weitzman">Adam Weitzman, MD</option>
+                                <option value="dave-carry">Dave Carry, DC</option>
+                            </select>
+                        </div>
+                        <div class="contact-form-col">
+                            <label for="contact-message">MESSAGE</label>
+                            <textarea id="contact-message" name="message" rows="8"
+                                placeholder="Your message..."></textarea>
+                        </div>
+                    </div>
+                    <p class="contact-form-disclaimer">
+                        <label class="contact-checkbox-label">
+                            <input type="checkbox" name="disclaimer" required>
+                            I understand and agree that any information submitted will be forwarded to our office by
+                            email and not via a secure messaging system. This form should not be used to transmit
+                            private health information, and we disclaim all warranties with respect to the privacy and
+                            confidentiality of any information submitted through this form.
+                        </label>
+                    </p>
+                    <button type="submit" class="section-btn section-btn-green">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer" role="contentinfo">
@@ -357,7 +355,7 @@
                 </ul>
                 <ul class="footer-links-col">
                     <li><a href="./privacy.html">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="./privacy.html">Terms of Service</a></li>
                     <li><a href="./contact.html">Contact us</a></li>
                 </ul>
             </nav>
