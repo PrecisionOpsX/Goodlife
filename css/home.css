@@ -4,7 +4,7 @@
     width: 100%;
     min-height: 500px;
     overflow: hidden;
-    min-height: 700px;
+    min-height: 490px;
 }
 
 .hero-slideshow {
@@ -26,27 +26,39 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 45%;
+    width: 100%;
     min-width: 320px;
     height: 100%;
     background-color: rgba(40, 98, 65, 0.90);
     display: flex;
     align-items: center;
-    padding: 60px 40px 60px 48px;
+    justify-content: center;
+    padding: 60px 40px 60px 70px;
     z-index: 2;
 }
 
+.hero-overlay .section-btn {
+    padding: 14px 50px;
+    font-size: 18px;
+    font-family: noto-sans-bold;
+}
+
 .hero-content {
-    max-width: 590px;
+    max-width: 615px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-heading {
     margin: 0 0 20px;
-    font-size: clamp(28px, 4vw, 42px);
+    font-size: 54px;
     color: #C1FF72;
     font-family: noto-sans-bold;
     line-height: 1.2;
     letter-spacing: -0.02em;
+    font-style: italic;
+    text-align: center;
 }
 
 .hero-subheading {
@@ -62,10 +74,12 @@
 .hero-description {
     margin: 0;
     font-size: 18px;
+    font-size: 26px;
     color: #fff;
     line-height: 1.5;
     font-family: noto-sans;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
