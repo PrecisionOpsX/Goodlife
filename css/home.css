@@ -232,7 +232,7 @@
     align-items: center;
     gap: 8px;
     padding: 10px 28px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -240,6 +240,7 @@
     margin-bottom: 24px;
     border: none;
     cursor: pointer;
+    font-family: noto-sans-bold;
 }
 
 .section-btn-green {

@@ -36,7 +36,7 @@
     align-items: center;
     gap: 8px;
     padding: 10px 28px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -48,6 +48,7 @@
     color: #286241;
     white-space: nowrap;
     border: 1px solid #286241;
+    font-family: noto-sans-bold;
 }
 
 .action-button:hover {
@@ -382,7 +383,7 @@
 
 /* ----- Healing Roadmap / Levels of Care (3-box row) ----- */
 .roadmap-section-title {
-    font-size: 30px;
+    font-size: 45px;
     font-family: noto-sans-bold;
     font-weight: 700;
     text-align: center;
