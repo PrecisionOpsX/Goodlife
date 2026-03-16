@@ -526,6 +526,7 @@
 @media (max-width: 500px) {
     .conditions-hero {
         padding: 40px 16px 36px;
+        min-height: 160px;
     }
 
     .conditions-hero-title {
@@ -541,7 +542,7 @@
     }
 
     .conditions-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 32px;
     }
 
@@ -581,5 +582,9 @@
     .healing-roadmap-box {
         padding: 16px 12px;
         font-size: clamp(0.85rem, 3vw, 0.95rem);
+    }
+    
+    .roadmap-section-title {
+        font-size: 38px;
     }
 }
