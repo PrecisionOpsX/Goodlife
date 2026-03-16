@@ -23,6 +23,10 @@ body {
     font-family: noto-sans;
 }
 
+.top-banner-link {
+    text-decoration: none;
+}
+
 .top-banner {
     width: 100%;
     padding: 10px 15px;
@@ -198,15 +202,15 @@ body {
 }
 
 .header-dropdown-level-1 {
-    background-color: #65BD54;   
+    background-color: #65BD54;
 }
 
 .header-dropdown-level-2 {
-    background-color: #359F49;   
+    background-color: #359F49;
 }
 
 .header-dropdown-level-3 {
-    background-color: #286241;   
+    background-color: #286241;
 }
 
 .dropdown-submenu {
@@ -274,6 +278,12 @@ body {
 
 .header-action-btns:hover {
     background-color: #359f49;
+}
+
+.footer-contact-info i {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
 }
 
 /* Mobile responsive */
@@ -663,18 +673,62 @@ body {
     color: #B0E671;
 }
 
+.footer-stay-connected .footer-social {
+    margin-top: 0;
+}
+
+.footer-social-title {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.site-footer .footer-inner>div {
+    min-width: 0;
+}
+
+@media (max-width: 992px) {
+    .footer-inner {
+        gap: 32px;
+    }
+
+    .footer-inner .footer-nav {
+        gap: 32px;
+    }
+}
+
 @media (max-width: 768px) {
+    .site-footer {
+        padding: 48px 20px;
+    }
+
     .footer-inner {
         flex-direction: column;
         align-items: flex-start;
+        gap: 32px;
     }
 
     .footer-stay-connected {
         max-width: 100%;
+        min-width: 0;
     }
 
     .footer-newsletter {
         max-width: 100%;
+    }
+
+    .footer-heading {
+        font-size: 1.75rem;
+    }
+
+    .footer-inner>div {
+        width: 100%;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 0;
     }
 }
 
@@ -693,7 +747,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.privacy-statement > p {
+.privacy-statement>p {
     margin: 0 0 20px;
     font-size: 15px;
     line-height: 1.6;
@@ -709,6 +763,6 @@ body {
     font-weight: 600;
 }
 
-.privacy-statement .privacy-section-heading + p {
+.privacy-statement .privacy-section-heading+p {
     margin-top: 0;
 }
