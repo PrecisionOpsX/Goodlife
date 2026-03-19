@@ -208,6 +208,10 @@
     cursor: pointer;
 }
 
+.schedule-disclaimer {
+    color: #fff;
+}
+
 .landing-input {
     width: 100%;
     padding: 12px 14px;
@@ -245,6 +249,32 @@ select.landing-input {
     line-height: 1.4;
     cursor: pointer;
     margin-top: 2px;
+}
+
+/* Booking form: patient type selection + conditional fields */
+.landing-checkbox-row {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.landing-checkbox-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.landing-conditional-field {
+    display: none;
+}
+
+.landing-conditional-field.is-visible {
+    display: block;
 }
 
 .landing-submit-btn {

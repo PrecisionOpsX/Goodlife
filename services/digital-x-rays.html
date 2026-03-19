@@ -21,6 +21,7 @@
   </head>
 
 <body>
+    <div class="header-wrapper">
     <a href="../new-patient.html" class="top-banner-link">
     <div class="top-banner">
         <h3>New Patient Special for only $39</h3>
@@ -81,15 +82,10 @@
                                 <li>
                                     <a href="./digital-x-rays.html">Digital X-rays</a>
                                 </li>
-                                <li><a href="./MRI.html">MRI</a></li>
                                 <li><a href="./ultrasound.html">Ultrasound</a></li>
-                                <li>
-                                    <a href="./allergy-testing.html">Allergy testing</a>
-                                </li>
-                                <li>
-                                    <a href="./food-sensitivity-testing.html">Food sensitivity testing</a>
-                                </li>
-                            </ul>
+                                <li><a href="./comprehensive-exam.html">Comprehensive Exam</a></li>
+
+                                </ul>
                         </li>
                         <li class="dropdown-item-has-children header-dropdown-level-1">
                             <a href="#">Conservative Care Treaments</a>
@@ -195,13 +191,15 @@
             </ul>
         </nav>
         <div class="action-group action-group-desktop">
-            <a href="../book.html" class="header-action-btns">Call us</a>
-            <a href="../verify.html" class="header-action-btns">Verify insurance</a>
+          <a href="../contact.html" class="header-action-btns">Contact</a>
+          <a href="../verify.html" class="header-action-btns">Verify Insurance</a>
+          <a href="../book.html" class="header-action-btns header-action-btns--book">Book</a>
         </div>
         <button class="mobile-menu-btn" aria-label="Toggle menu">
             <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
         </button>
     </header>
+    </div>
 
     <main>
         <section class="about-page-banner" aria-label="About Goodlife Physical Medicine">
@@ -287,11 +285,35 @@
               <label for="landing-last-name" class="visually-hidden">Last Name</label>
               <input type="text" id="landing-last-name" name="last_name" class="landing-input" placeholder="LAST NAME *" required />
             </div>
-            <div class="landing-form-group">
+            
+            <div class="landing-form-group landing-patient-type">
+
+              <div class="landing-checkbox-row">
+
+                <label class="landing-checkbox-inline">
+
+                  <input type="checkbox" class="landing-checkbox" id="landing-new-patient" name="patient_type" value="new" />
+
+                  New Patient
+
+                </label>
+
+                <label class="landing-checkbox-inline">
+
+                  <input type="checkbox" class="landing-checkbox" id="landing-returning-patient" name="patient_type" value="returning" />
+
+                  Returning Patient
+
+                </label>
+
+              </div>
+
+            </div>
+<div class="landing-form-group landing-conditional-field">
               <label for="landing-phone" class="visually-hidden">Phone</label>
               <input type="tel" id="landing-phone" name="phone" class="landing-input" placeholder="PHONE" />
             </div>
-            <div class="landing-form-group">
+            <div class="landing-form-group landing-conditional-field">
               <label for="landing-email" class="visually-hidden">Email</label>
               <input type="email" id="landing-email" name="email" class="landing-input" placeholder="EMAIL" />
             </div>
@@ -429,6 +451,7 @@
     <script src="../js/testimonials-slider.js"></script>
     <script src="../js/conditions-slider.js"></script>
     <script src="../js/newsletter-submit.js"></script>
+  <script src="../js/landing-form-to-book.js"></script>
 </body>
 
 </html>

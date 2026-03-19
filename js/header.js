@@ -1,4 +1,5 @@
 (function() {
+    const headerWrapper = document.querySelector('.header-wrapper');
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navContainer = document.querySelector('.nav-container');
     const navLinks = document.querySelectorAll('.nav-link-item');
@@ -94,4 +95,15 @@
             closeMobileMenu();
         }
     });
+
+    // Sticky header: shadow only when scrolled away from top
+    function updateHeaderScrollShadow() {
+        if (!headerWrapper) return;
+        headerWrapper.classList.toggle(
+            'header-wrapper--scrolled',
+            window.scrollY > 0
+        );
+    }
+    window.addEventListener('scroll', updateHeaderScrollShadow, { passive: true });
+    updateHeaderScrollShadow();
 })();
