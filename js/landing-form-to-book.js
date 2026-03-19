@@ -12,20 +12,34 @@
 
   function getBookNowUrl() {
     var path = typeof window.location.pathname !== 'undefined' ? window.location.pathname : '';
-    return path.indexOf('/locations/') !== -1 ? '../book-now.html' : './book-now.html';
+    // Most pages live in subfolders like /locations, /services, /conditions.
+    // book-now.html is at the site root.
+    var inSubdir =
+      path.indexOf('/locations/') !== -1 ||
+      path.indexOf('/services/') !== -1 ||
+      path.indexOf('/conditions/') !== -1;
+    return inSubdir ? '../book-now.html' : './book-now.html';
   }
 
   function getFormData(form) {
     var data = {};
     var locationEl = form.querySelector('#landing-location');
     var nameEl = form.querySelector('#landing-name');
+    var firstNameEl = form.querySelector('#landing-first-name');
+    var lastNameEl = form.querySelector('#landing-last-name');
     var emailEl = form.querySelector('#landing-email');
     var phoneEl = form.querySelector('#landing-phone');
     var consentEl = form.querySelector('#landing-consent');
     var newsletterEl = form.querySelector('#landing-newsletter');
 
     if (locationEl) data.location = locationEl.value || '';
-    if (nameEl) data.name = nameEl.value || '';
+    if (nameEl) {
+      data.name = nameEl.value || '';
+    } else if (firstNameEl || lastNameEl) {
+      var first = firstNameEl ? firstNameEl.value || '' : '';
+      var last = lastNameEl ? lastNameEl.value || '' : '';
+      data.name = [first, last].filter(Boolean).join(' ').trim();
+    }
     if (emailEl) data.email = emailEl.value || '';
     if (phoneEl) data.phone = phoneEl.value || '';
     if (consentEl) data.consent = consentEl.checked;

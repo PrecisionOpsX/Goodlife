@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/about.css" />
     <link rel="stylesheet" href="../css/conditions.css" />
+    <link rel="stylesheet" href="../css/landing.css" />
   </head>
 
   <body>
@@ -904,23 +905,40 @@
         </div>
         <div class="schedule-section" aria-labelledby="schedule-heading">
           <div class="schedule-sectione-inner">
-            <img
-              src="../assets/images/map.jpg"
-              alt="Map"
-              class="schedule-map"
-            />
-            <form class="schedule-form">
-              <h3>Schedule Your Appointment Online</h3>
-              <div class="schedule-form-group">
-                <label for="about-name">Name</label>
-                <input
-                  type="text"
-                  id="about-name"
-                  name="name"
-                  placeholder="Enter your name"
-                />
+            <form class="landing-offer-form schedule-offer-form" aria-labelledby="schedule-heading">
+              <h3 id="schedule-heading" class="schedule-offer-title">
+                <b>BOOK AN APPOINTMENT</b><br />FREE Consultations
+              </h3>
+              <div class="landing-form-group">
+                <label for="landing-location" class="visually-hidden">Location</label>
+                <select id="landing-location" name="location" class="landing-input">
+                  <option value="" selected disabled>LOCATION</option>
+                  <option value="el-segundo">El Segundo</option>
+                  <option value="redondo-beach">Redondo Beach</option>
+                  <option value="seal-beach">Seal Beach</option>
+                  <option value="torrance">Torrance</option>
+                </select>
               </div>
+              <div class="landing-form-group">
+                <label for="landing-first-name" class="visually-hidden">First Name</label>
+                <input type="text" id="landing-first-name" name="first_name" class="landing-input" placeholder="FIRST NAME *" required />
+              </div>
+              <div class="landing-form-group">
+                <label for="landing-last-name" class="visually-hidden">Last Name</label>
+                <input type="text" id="landing-last-name" name="last_name" class="landing-input" placeholder="LAST NAME *" required />
+              </div>
+              <div class="landing-form-group">
+                <label for="landing-phone" class="visually-hidden">Phone</label>
+                <input type="tel" id="landing-phone" name="phone" class="landing-input" placeholder="PHONE" />
+              </div>
+              <div class="landing-form-group">
+                <label for="landing-email" class="visually-hidden">Email</label>
+                <input type="email" id="landing-email" name="email" class="landing-input" placeholder="EMAIL" />
+              </div>
+              <p class="schedule-disclaimer">Your information is kept strictly confidential and used only to coordinate your care &mdash; we never share or sell your personal or medical details.</p>
+              <button type="submit" class="landing-submit-btn">SCHEDULE APPOINTMENT</button>
             </form>
+            <img src="../assets/images/map.jpg" alt="Map" class="schedule-map" />
           </div>
         </div>
       </section>

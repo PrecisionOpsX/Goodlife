@@ -625,15 +625,20 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    align-items: center;
+    /* Form card (left) + map (right) like the home page screenshot */
+    grid-template-columns: 1fr 1.35fr;
+    gap: 28px;
+    align-items: stretch;
+    min-height: 420px;
 }
 
 .schedule-map {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
+    object-fit: cover;
+    min-height: 420px;
+    order: 2;
 }
 
 .schedule-form {
@@ -642,6 +647,71 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 15px;
+}
+
+/* Schedule appointment card (overrides landing-offer-form look in schedule context) */
+.schedule-section .landing-offer-form.schedule-offer-form,
+.schedule-section .landing-offer-form {
+    background-color: #C1FF72;
+    color: #286241;
+    border-radius: 20px;
+    box-shadow: none;
+    max-width: 430px;
+    height: 100%;
+    padding: 28px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 1;
+}
+
+.schedule-section .schedule-offer-title {
+    margin: 0 0 18px;
+    text-align: center;
+    font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+    font-family: noto-sans-bold;
+    color: #286241;
+    line-height: 1.15;
+}
+
+.schedule-section .landing-form-group {
+    margin-bottom: 12px;
+}
+
+.schedule-section .landing-input {
+    border: 1px solid rgba(40, 98, 65, 0.25);
+    border-radius: 12px;
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.schedule-section .landing-input::placeholder {
+    color: #6d6d6d;
+}
+
+.schedule-section .landing-offer-form select.landing-input {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23286241' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+}
+
+.schedule-section .schedule-disclaimer {
+    margin: 6px 0 16px;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    color: #1a1a1a;
+    text-align: left;
+}
+
+.schedule-section .landing-submit-btn {
+    background-color: #286241;
+    color: #C1FF72;
+    border-radius: 999px;
+    font-size: 0.98rem;
+    padding: 16px 24px;
+    letter-spacing: 0.04em;
+}
+
+.schedule-section .landing-submit-btn:hover {
+    background-color: #1E8449;
 }
 
 /* Patient Experience */
@@ -1302,10 +1372,8 @@
 .book-online-inner {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 32px;
-    align-items: start;
+    display: flex;
+    justify-content: center;
 }
 
 .book-scheduler-placeholder h3 {

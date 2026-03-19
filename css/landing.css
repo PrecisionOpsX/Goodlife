@@ -46,12 +46,12 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 60px 24px;
     display: flex;
     grid-template-columns: 1fr 1fr;
-    gap: 48px;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
 }
