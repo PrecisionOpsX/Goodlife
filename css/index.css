@@ -288,6 +288,7 @@ body {
     justify-content: center;
     text-align: center;
     font-family: inherit;
+    font-family: noto-sans-bold;
 }
 
 .header-action-btns:hover {

@@ -264,9 +264,9 @@ select.landing-input {
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    color: #fff;
     font-size: 0.95rem;
     line-height: 1.2;
+    color: #000;
 }
 
 .landing-conditional-field {
